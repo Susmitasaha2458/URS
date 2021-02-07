@@ -33,7 +33,7 @@ Similarity score = w1* f1+w2*(1-f2)
 Setup:
 
 1. Download the entire repository
-2. go into the project folder and into  webscrape/csv folder , Unzip all the zipped files into csv folder(I have uploaded zipped files as the github is not accepting the files which are more than 50 MB) 
+2. go into the project folder and into  webscrape/csv folder , Unzip all the zipped files into csv folder(I have uploaded zipped files as the github is not accepting the files which are more than 100 MB) 
 3. run pip or pip3 install -r requirements.txt
 4. cd server
 5. python or python3 server.py
