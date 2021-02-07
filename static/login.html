@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Login</title>
+</head>
+<body>
+<div class="container">{% include 'header.html' %}</div>
+    <div class="container">
+        <div class="jumbotron">
+          <h3>Please login</h3>
+          <br>
+          <form action="" method="post">
+            <input required type="text" placeholder="Username" name="username" value="{{
+              request.form.username }}">
+              <br> <br>
+             <input required type="password" placeholder="Password" name="password" value="{{
+              request.form.password }}">
+               <br> <br>
+            <input class="btn btn-primary" type="submit" value="Login">
+          </form>
+          <br>
+          {% if error %}
+            <p class="alert alert-danger"><strong>Error:</strong> {{ error }}</p>
+          {% endif %}
+        </div>
+    </div>
+{% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<body>
+
+<div class="container">{% include 'header.html' %}</div>
+
+<div class="container">
+    <div class="jumbotron">
+        <h3>University Recommendation system</h3>
+        <h4>The top recommended Universities based on your SAT Score & Maximum Tuition Fee are
+            <br> Top 5 university </h4>
+        <table class="table table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">University</th>
+                <th scope="col">Acceptance Rate</th>
+            </tr>
+            </thead>
+            <tbody>
+            {%
+            for key, value in result.items()
+            %}
+
+            <tr>
+                <td> {{ key }}</td>
+                <td> {{ value }}</td>
+            </tr>
+
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer class="footer">
+    </footer>
+</div>
+{% include 'footer.html' %}
+</body>
+</html>

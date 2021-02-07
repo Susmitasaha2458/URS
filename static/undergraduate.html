@@ -1,0 +1,29 @@
+<html>
+  <body>
+
+    <div class="container">{% include 'header.html' %}</div>
+
+  <div class="container">
+    <div class="jumbotron">
+        <h3>Under Graduate Universities</h3>
+        <h4>Please Enter your SAT score and Maximum Tution Fees</h4>
+        <p class="lead"></p>
+        <p>
+          <form action="/undergraduatealgo">
+           SAT Score:<br>
+           <input type="text" name="sat">
+           <br>
+           Maximum Tution Fees:<br>
+           <input type="text" name="tution">
+           <br><br>
+           <input type="submit" value="Submit">
+         </form> 
+        </p>
+    </div>
+
+    <footer class="footer">
+    </footer>
+  </div>
+{% include 'footer.html' %}
+  </body>
+</html>
